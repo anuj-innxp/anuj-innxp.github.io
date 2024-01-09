@@ -27,12 +27,12 @@
 
 
   window.fbAsyncInit = function() {
-    FB.init({
-      appId      : 924538395672664,
-      cookie     : true,                     // Enable cookies to allow the server to access the session.
-      xfbml      : true,                     // Parse social plugins on this webpage.
-      version    : 18.0.          // Use this Graph API version for this call.
-    });
+  FB.init({
+    appId      : 924538395672664,
+    cookie     : true,                     // Enable cookies to allow the server to access the session.
+    xfbml      : true,                     // Parse social plugins on this webpage.
+    version    : 'v18.0'                   // Use this Graph API version for this call.
+  });
 
 
     FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
