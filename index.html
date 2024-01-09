@@ -44,6 +44,9 @@
         };
 
       </script>
-
+    
+FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
   </body>
 </html>
